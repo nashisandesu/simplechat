@@ -1,13 +1,7 @@
 # lambda/index.py
 import json
 import os
-import boto3
-import re  # 正規表現モジュールをインポート
 import urllib.request
-from botocore.exceptions import ClientError
-
-# グローバル変数としてクライアントを初期化（初期値）
-bedrock_client = None
 
 # APIのURL
 API_URL = os.environ.get("API_URL", "https://8d8c-34-143-153-8.ngrok-free.app/generate")
